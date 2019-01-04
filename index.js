@@ -11,8 +11,7 @@ const clipboard = navigator.clipboard ? navigator.clipboard : clipboardPolyfill;
 
 const readText = () => clipboard.readText();
 
-const read = () =>
-  clipboard.read ? clipboard.read() : clipboardPolyfill.read();
+const read = () => clipboard.read();
 
 const writeText = text => clipboard.writeText(text);
 
